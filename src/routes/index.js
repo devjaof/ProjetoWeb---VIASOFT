@@ -1,6 +1,4 @@
 import express from "express";
-import cadastros from "../models/Cadastro.js";
-import feedbacks from "../models/Feedback.js";
 import router from "./Routes.js";
 
 const routes = (app) => {

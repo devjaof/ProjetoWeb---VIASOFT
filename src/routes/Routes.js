@@ -9,6 +9,8 @@ router
    .get("/cadastros/:id", CadastrosController.mostrarCadastrosPorId)
    .post("/cadastros", CadastrosController.incluirCadastro)
 
+   .get("/feedbacks/buscaPorUsuario", FeedbacksController.mostrarFeedbackPorUsuario)
+   .get("/feedbacks/buscaPorRemetente", FeedbacksController.mostrarFeedbackPorRemetente)
    .get("/feedbacks", FeedbacksController.mostrarFeedbacks)
    .get("/feedbacks/:id", FeedbacksController.mostrarFeedbacksPorId)
    .post("/feedbacks", FeedbacksController.incluirFeedback)
