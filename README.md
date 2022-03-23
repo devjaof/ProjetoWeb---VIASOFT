@@ -10,4 +10,4 @@ Para o database usei o mongoDB Atlas;<br>
 Para o frontend será usado o Angular<br>
 
 ## Execução:
-Para executar a aplicação você deve baixar os arquivos em sua máquina, rodar "npm start" no terminal dentro da pasta "backend"
+Para executar a aplicação você deve baixar os arquivos em sua máquina, rodar "npm start" no terminal dentro da pasta "aplicacao", com os módulos express e nodemon ativos.
