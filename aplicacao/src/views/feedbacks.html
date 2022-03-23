@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="feedbacks.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="container">
+        <div class="titulo">
+            <p>BUSCA DE FEEDBACKS</p>
+        </div>
+        <div class="busca">
+            <div class="busca">
+
+                <div>
+                    <input type="radio" name="escolherBusca" id="porUsuario" value="usuario" checked>
+                    <label for="usuario">Pesquisa por usuário</label>
+                </div>
+
+                <div>
+                    <input type="radio" name="escolherBusca" id="porRemetente" value="remetente">
+                    <label for="remetente">Pesquisa por remetente</label>
+                </div>
+                
+                <input type="text" placeholder="  Busque por Feedbacks" class="inputBuscas" id="inputBuscas" autofocus>
+                 <button id="btnUsuario" class="btn">Buscar</button>
+            </div>
+        </div>
+        <div class="feedbacks" id="feedback">
+
+        </div>
+    </div>
+    
+    <script src="../appFront/testes.js"></script>
+</body>
+</html>
