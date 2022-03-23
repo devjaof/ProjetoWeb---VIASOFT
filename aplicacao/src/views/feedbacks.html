@@ -12,22 +12,19 @@
         <div class="titulo">
             <p>BUSCA DE FEEDBACKS</p>
         </div>
-        <div class="busca">
-            <div class="busca">
 
-                <div>
+        <div class="busca">           
+                <div class="inputRadio">
                     <input type="radio" name="escolherBusca" id="porUsuario" value="usuario" checked>
                     <label for="usuario">Pesquisa por usuário</label>
-                </div>
-
-                <div>
                     <input type="radio" name="escolherBusca" id="porRemetente" value="remetente">
                     <label for="remetente">Pesquisa por remetente</label>
                 </div>
-                
                 <input type="text" placeholder="  Busque por Feedbacks" class="inputBuscas" id="inputBuscas" autofocus>
-                 <button id="btnUsuario" class="btn">Buscar</button>
-            </div>
+                <button id="btn" class="btn">Buscar</button>      
+        </div>
+        <div class="incluirFeedback">
+           <a href="./main.html"><button id="incluiFeedback">Dê seu feedback!</button></a>
         </div>
         <div class="feedbacks" id="feedback">
 

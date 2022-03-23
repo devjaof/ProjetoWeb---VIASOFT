@@ -13,7 +13,11 @@
 }
 
 .titulo p {
-    font-size: 40px;
+    font-size: 3em;
+}
+
+.inputRadio{
+    font-size: 25px;
 }
 
 .busca {
@@ -25,7 +29,7 @@
 
 .inputBuscas {
     width: 50vw;
-    height: 50px;
+    height: 30px;
     
     margin-top: 10px;
     padding: 15px;
@@ -38,7 +42,33 @@
     font-size: 30px;
 }
 
-.btn {
+#btn {
+    width: 12vw;
+    height: 70px;
+
+    border-style: none;
+    border-radius: 10px;
+
+    background-color: blue;
+    color: white;
+
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+
+    cursor: pointer;
+}
+
+#btn:hover {
+    background-color: darkblue;
+}
+
+#btn:active {
+    padding: 6px 26px 6px 26px;
+}
+
+#incluiFeedback {
     width: 12vw;
     height: 70px;
 
@@ -52,14 +82,12 @@
     margin-left: 10px;
     margin-bottom: 20px;
     font-size: 20px;
+
+    cursor: pointer;
 }
 
-.btn:hover {
+#incluiFeedback:hover {
     background-color: darkblue;
-}
-
-#btn:active {
-    padding: 8px 28px 8px 28px;
 }
 
 .feedbacks {

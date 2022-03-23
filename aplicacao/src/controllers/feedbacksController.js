@@ -26,7 +26,7 @@ class FeedbacksController {
         let feedback = new feedbacks(req.body);
         feedback.save((err) => {   
             if(err) {
-                res.status(500).send({message: "Falha dar o feedback"})
+                res.status(500).send({message: "Falha ao deixar o feedback"})
             } else {
                 res.status(201).send(feedback.toJSON());
             }
