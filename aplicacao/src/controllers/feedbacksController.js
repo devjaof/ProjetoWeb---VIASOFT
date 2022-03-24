@@ -12,7 +12,7 @@ class FeedbacksController {
         const id = req.params.id;
 
         feedbacks.findById(id)
-            .populate('idRemetente', 'nome')
+            .populate('remetente', 'nome')
             .exec((err, feedbacks) => {
             if(err) {
                 res.status(400).send({message: `${err.message} - Id não encontrado.`})

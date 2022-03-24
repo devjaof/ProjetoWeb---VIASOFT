@@ -1,0 +1,29 @@
+:root body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+} 
+.container{
+    width: 100vw;
+    height: 100vh; 
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#novoFeed {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    gap: 5px;
+}
+
+#inputFeed {
+    width: 40vw;
+}
+
+#btn {
+    width: 40.5vw;
+}
