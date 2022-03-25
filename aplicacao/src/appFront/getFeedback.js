@@ -1,16 +1,12 @@
-
 const inputBuscas = document.getElementById("inputBuscas");
 const checkUsuario = document.getElementById("porUsuario");
 const checkRemetente = document.getElementById("porRemetente");
 const btnUsuario = document.getElementById("btnUsuario");
 const btnRemetente = document.getElementById("btnRemetente");
 
-// if por usuário, buscar pelo campo usuário no json
-// if por remetente, buscar pelo campo remetente no json
+// se por usuário, buscar pelo campo usuário no json
+// se por remetente, buscar pelo campo remetente no json
 
-const pegaTexto = function () {
-  var text = document.getElementById("inputBuscas").value;
-}
 
 const pegaFeedbacks = function(id) {
   var feedbacksURL = 'http://localhost:8080/feedbacks/';
@@ -21,6 +17,9 @@ const pegaFeedbacks = function(id) {
 
   request.onload = function() {
     var feedbacks = request.response;
+    if(inputBuscas.value == 'joao'){
+
+    }
     populate
     ("Usuário: " + feedbacks[id].usuario + " | " +
     "Data: " + feedbacks[id].data + " | " +
@@ -46,8 +45,6 @@ btnRemetente.onclick = function () {
 //inputBuscas.addEventListener('input', event => {
 //  console.log(event.target.value.trim())
 //})
-
-
 
 
 
