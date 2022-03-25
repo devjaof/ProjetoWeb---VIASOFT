@@ -11,3 +11,7 @@ Para o frontend será usado JavaScript puro<br>
 
 ## Execução:
 Para executar a aplicação você deve baixar os arquivos em sua máquina, rodar "npm start" no terminal dentro da pasta "aplicacao", com os módulos express e nodemon ativos e executar o arquivo index.html em /aplicacao/views/index.html
+
+Existem dois usuários cadastrados: <br>
+joao | senha: 123
+laura | senha: 123
