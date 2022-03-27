@@ -15,3 +15,5 @@ Para executar a aplicação você deve baixar os arquivos em sua máquina, rodar
 Existem dois usuários cadastrados: <br>
 joao | senha: 123 <br>
 laura | senha: 123
+
+<img href="./readMe-Files/aaaaaaaa_edit_0.gif">
