@@ -5,7 +5,7 @@ Criação de aplicação WEB com login de usuários e troca de feedbacks.<br>
 Criado com o intuito de passar no processo seletivo da VIASOFT.<br>
 
 ## Ferramentas:
-Usado Node.js, aliado do pacote express para a definição de rotas e do nodemon para facilitar o deploy da api;<br>
+No backend usei Node.js, aliado do pacote express para a definição de rotas e do nodemon para facilitar o deploy da api;<br>
 Para o database usei o mongoDB Atlas;<br>
 Para o frontend será usado JavaScript puro<br>
 
