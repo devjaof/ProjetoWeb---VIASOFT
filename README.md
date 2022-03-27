@@ -10,11 +10,14 @@ Para o database usei o mongoDB Atlas;<br>
 Para o frontend será usado JavaScript puro<br>
 
 ## Execução:
-Para executar a aplicação você deve baixar os arquivos em sua máquina, rodar "npm start" no terminal dentro da pasta "aplicacao", com os módulos express e nodemon ativos e executar o arquivo index.html em /aplicacao/views/index.html
+Para executar a aplicação você deve baixar os arquivos em sua máquina, om os módulos express e nodemon ativos rodar "npm start" no terminal dentro da pasta "aplicacao";<br>
+Então é só executar o arquivo index.html em /aplicacao/views/index.html <br>
 
 Existem dois usuários cadastrados: <br>
 joao | senha: 123 <br>
 laura | senha: 123
 
 
-![123123](https://user-images.githubusercontent.com/94070775/160287900-305d7ccd-dbc4-4591-8ed4-d57d8e31ec03.gif)
+## Funcionamento da API:
+
+<img src="./toreadme/api.gif>
