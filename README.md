@@ -20,4 +20,4 @@ laura | senha: 123
 
 ## Funcionamento da API:
 
-<img src="./toreadme/api.gif>
+<img src="./toreadme/API.gif">
