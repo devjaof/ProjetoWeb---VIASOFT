@@ -20,13 +20,13 @@ usuario2 | senha: 123
 
 ## Funcionamento da API:
 
-<img src="./src/assets/toReadMe/API.gif">
+<img src="./aplicacao/src/assets/toReadMe/API.gif">
 
 <br><br>
 
 ## Aplicação Funcionando:
 
-<img src="./src/assets/toReadMe/demonstracaoAplicacao.gif">
+<img src="./src/aplicacao/assets/toReadMe/demonstracaoAplicacao.gif">
 
 ### O que aprendi:
 
