@@ -13,20 +13,22 @@
                 <input type="text" placeholder="  Busque por Feedbacks" class="inputBuscas" id="inputBuscas" autofocus>
                 
                 <div class="btns">
-                    <label for="btnUsuario" name="btnUsuario">Pesquisa por usuário: </label>
-                    <button name="btnUsuario" id="btnUsuario" class="btn">Buscar</button>
-                    <label for="btnRemetente" name="btnRemetente">Pesquisa por Remetente: </label>      
-                    <button name="btnRemetente" id="btnRemetente" class="btn">Buscar</button>   
+                    <button name="btnUsuario" id="btnUsuario" class="btn">Pesquisa por usuário</button>    
+                    <button name="btnRemetente" id="btnRemetente" class="btn">Pesquisa por Remetente</button> 
+                    <a href="./addFeed.html"><button id="btnDarFeedback" class="btn">Dê seu feedback!</button></a>  
                 </div>
                   
         </div>
-        
-        <div class="incluirFeedback">
-           <a href="./addFeed.html"><button id="incluiFeedback">Dê seu feedback!</button></a>
-        </div>
-        
-        <div class="feedbacks" id="feedback">
-        </div>
+    
+        <table class="feedbacks" id="tabela">
+                <th>Usuário</th>
+                <th>Data</th>
+                <th>Melhorar</th>
+                <th>Manter</th>
+                <th>Feedback Final</th>
+                <th>remetente</th>
+                      
+        </table>
     </div>
     
     <script src="../appFront/getFeedback.js"></script>

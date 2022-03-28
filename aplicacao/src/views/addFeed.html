@@ -9,23 +9,27 @@
 </head>
 <body>
 
-<!-- tela de inclusão de feedback -->
     <div class="container">
         <h1>Envie seu Feedback</h1>
-        <div id="novoFeed">
-            <input name="usuario" type="text" placeholder="Usuário" id="inputFeedUsuario">
-            <input name="data" type="date" placeholder="Data" id="inputFeedData">
-            <input name="melhorar" type="text" placeholder="Pontos a melhorar" id="inputFeedMelhorar">
-            <input name="manter" type="text" placeholder="Pontos a manter" id="inputFeedManter">
-            <input name="sugestoes" type="text" placeholder="Sugestões" id="inputFeedSugest">
-            <input name="feedFinal" type="text" placeholder="Feedback Final" id="inputFeedFinal">
-            <input name="remetente" type="text" placeholder="Quem está fazendo o feedback?" id="inputFeedRemet">
-
-            <button id="btn">Enviar</button>
-            <a href="./feedbacks.html"><button id="btn">Visualizar Feedbacks</button></a>
+        <form onsubmit="postFeedback()" id="novoFeed">
+         
+            <input name="usuario" type="text" placeholder="Usuário" id="inputFeedUsuario" class="input">
+            <input name="data" type="date" id="inputFeedData" class="input">
+            <input name="melhorar" type="text" placeholder="Pontos a melhorar" id="inputFeedMelhorar" class="input">
+            <input name="manter" type="text" placeholder="Pontos a manter" id="inputFeedManter" class="input">
+            <input name="sugestoes" type="text" placeholder="Sugestões" id="inputFeedSugest" class="input">   
+            <input name="feedFinal" type="text" placeholder="Feedback Final" id="inputFeedFinal" class="input">
+            <input name="remetente" type="text" placeholder="Quem está fazendo o feedback?" id="inputFeedRemet" class="input">
+            <br>
+            <button type="submit" id="btn" >Enviar</button>
+             
+        </form>
+        
+        <a href="./feedbacks.html"><button id="btn">Visualizar Feedbacks</button></a>  
+        
+        <div id="resposta">
         </div>
-
-        <p id="resposta"></p>
+        
     </div>
 
     <script src="../appFront/postFeedback.js"></script>

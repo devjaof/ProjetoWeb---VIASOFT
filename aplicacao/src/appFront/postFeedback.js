@@ -1,37 +1,43 @@
-var usuario = document.getElementById("inputFeedUsuario");
-var data = document.getElementById("inputFeedData");
-var melhorar = document.getElementById("inputFeedMelhorar");
-var manter = document.getElementById("inputFeedManter");
-var sugestoes = document.getElementById("inputFeedSugest");
-var final = document.getElementById("inputFeedFinal");
-var remetente = document.getElementById("inputFeedRemet");
+let resposta = document.getElementById("resposta");
 
-var ajax = new XMLHttpRequest();
 
-ajax.onload = function () {
-    const resposta = document.getElementById("resposta");
-    resposta.innerHTML = this.responseText;
-};
+function fazPost(url,body){
+    let request = new XMLHttpRequest();
+    request.open("POST", url, true);
+    request.setRequestHeader("Content-type", "application/json");
+    request.send(JSON.stringify(body));
 
-ajax.open("POST", "http://localhost:8080/feedbacks", true);
+    request.onload = function() {
+        console.log(this.responseText);
+        resposta.innerHTML = this.responseText;
+    }
 
-ajax.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-
-const btn = document.getElementById("btn");
-
-btn.onclick = function (){
- 
-    var xyz = (JSON.parse(JSON.stringify({
-        "remetente":remetente.value,
-        "usuario": usuario.value,
-        "data": data.value,
-        "pontosMelhorar": melhorar.value,
-        "pontosManter": manter.value,
-        "sugestoes": sugestoes.value,
-        "feedbackFinal": final.value
-    })));
-
-    ajax.send(xyz)
-    console.log(typeof(xyz), xyz)
+    return request.responseText;
 }
 
+
+function postFeedback() {
+    event.preventDefault();
+    let url = "http://localhost:8080/feedbacks";
+    let usuario = document.getElementById("inputFeedUsuario").value;
+    let data = document.getElementById("inputFeedData").value;
+    let melhorar = document.getElementById("inputFeedMelhorar").value;
+    let manter = document.getElementById("inputFeedManter").value;
+    let sugestoes = document.getElementById("inputFeedSugest").value;
+    let final = document.getElementById("inputFeedFinal").value;
+    let remetente = document.getElementById("inputFeedRemet").value;
+
+    body = {
+        "usuario": usuario,
+        "data": data,
+        "pontosMelhorar": melhorar,
+        "pontosManter": manter,
+        "sugestoes": sugestoes,
+        "feedbackFinal": final,
+        "remetente": remetente
+    }
+
+    fazPost(url, body);
+    
+    
+}

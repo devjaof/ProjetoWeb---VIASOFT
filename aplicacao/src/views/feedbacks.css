@@ -1,7 +1,12 @@
+/* css base */
+
 :root body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    
+    font-family: 'Roboto', sans-serif;
+    background-image: url("../assets/background.jpg");
 } 
 .container{
     width: 100vw;
@@ -12,34 +17,17 @@
     align-items: center;
 }
 
-.titulo p {
-    font-size: 3em;
-}
 
-.inputRadio{
-    font-size: 25px;
-}
+/* estilo da área de busca */
 
 .busca {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    margin-right: 0;
-}
-
-.btns {
-    font-size: 20px;
-
-    display: flex;
-    flex-direction: column;
-    margin-top: 15px;
-
-    cursor: pointer;
 }
 
 .inputBuscas {
     width: 50vw;
-    height: 30px;
+    height: 50px;
     
     margin-top: 10px;
     padding: 15px;
@@ -52,30 +40,44 @@
     font-size: 30px;
 }
 
+.btns {
+    font-size: 30px;
 
-#incluiFeedback {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
-    margin-top: 20px;
-    margin-left: 10px;
-    margin-bottom: 20px;
-    font-size: 15px;
+    margin-top: 15px;
+    margin-left: 15px;
+    
+    gap: 10px;
+
+    font-family: 'Roboto', sans-serif;
+}
+
+.btn {
+    font-size: 18px;
+
+    background-color: rgb(146, 156, 212);
+
+    padding:10px;
+
+    border-style: none;
+    border-radius: 10px;
 
     cursor: pointer;
 }
 
-.feedbacks {
-    background-color: lightgray;
-
-    border-radius: 20px;
-
-    width: 80vw;
-    height: 800vh;
+.btn:hover {
+    background-color: rgb(107, 116, 167);
 }
 
+/* estilo da tabela onde mostra os feedbacks */
 
-
-.feedbacks li {
+.feedbacks {
     margin: 20px;
+
+    width: 80vw;
 
     border-radius: 10px;
     box-sizing: border-box;
@@ -84,4 +86,17 @@
     background-color: rgb(146, 156, 212);
 
     padding:10px;
+}
+
+td, tr {
+    border: 1px solid black;
+
+    color: rgb(37, 45, 94);
+
+    font-family: 'Roboto', sans-serif;
+}
+
+.feedbacks button {
+    width: 20px;
+    height: 20px
 }

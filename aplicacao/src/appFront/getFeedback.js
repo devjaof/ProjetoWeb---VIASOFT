@@ -1,53 +1,80 @@
 const inputBuscas = document.getElementById("inputBuscas");
-const checkUsuario = document.getElementById("porUsuario");
 const checkRemetente = document.getElementById("porRemetente");
 const btnUsuario = document.getElementById("btnUsuario");
 const btnRemetente = document.getElementById("btnRemetente");
 
-// se por usuário, buscar pelo campo usuário no json
-// se por remetente, buscar pelo campo remetente no json
 
-
-const pegaFeedbacks = function(id) {
-  var feedbacksURL = 'http://localhost:8080/feedbacks/';
-  var request = new XMLHttpRequest();
-  request.open('GET', feedbacksURL);
-  request.responseType = 'json';
+function fazGet(url) {
+  let request = new XMLHttpRequest();
+  request.open('GET', url, false);
   request.send();
-
-  request.onload = function() {
-    var feedbacks = request.response;
-    if(inputBuscas.value == 'joao'){
-
-    }
-    populate
-    ("Usuário: " + feedbacks[id].usuario + " | " +
-    "Data: " + feedbacks[id].data + " | " +
-    "Pontos a Melhorar: " + feedbacks[id].pontosMelhorar + " | " +
-    "Pontos a Manter: " + feedbacks[id].pontosManter + " | " +
-    "Feedback Final: " + feedbacks[id].feedbackFinal + " | " +
-    "Remetente: " + feedbacks[id].remetente);
-  }
-
-  function populate(jsonObj) {
-    var novo = document.createElement('li');
-    var feedback = document.getElementById('feedback');
   
-    novo.textContent = JSON.stringify(jsonObj);
-    feedback.appendChild(novo);
-  } 
+  return request.responseText
 }
 
-btnRemetente.onclick = function () {
-  pegaFeedbacks(0);
+function criaLinha(feedback) {
+  let linha = document.createElement("tr"); 
+  let tdUsuario = document.createElement("td"); 
+  let tdData = document.createElement("td"); 
+  let tdMelhorar = document.createElement("td");
+  let tdManter = document.createElement("td");  
+  let tdFinal = document.createElement("td"); 
+  let tdRemetente = document.createElement("td");
+
+   tdUsuario.innerHTML = feedback.usuario;
+   tdData.innerHTML = feedback.data;
+   tdMelhorar.innerHTML= feedback.pontosMelhorar;
+   tdManter.innerHTML = feedback.pontosManter;
+   tdFinal.innerHTML = feedback.feedbackFinal;
+   tdRemetente.innerHTML = feedback.remetente;  
+
+   linha.appendChild(tdUsuario);
+   linha.appendChild(tdData);
+   linha.appendChild(tdMelhorar);
+   linha.appendChild(tdManter);
+   linha.appendChild(tdFinal);
+   linha.appendChild(tdRemetente);
+
+   return linha;
 }
 
-//inputBuscas.addEventListener('input', event => {
-//  console.log(event.target.value.trim())
-//})
+function buscaFeedbacksUsuario() {
+  let tabela = document.getElementById('tabela');
+  let data = fazGet("http://localhost:8080/feedbacks");
+  let feedbacks = JSON.parse(data);
 
+ 
+  var filtraUsuario = feedbacks.filter(function (el) {
+    return el.usuario == inputBuscas.value;
+  })
 
+  filtraUsuario.forEach(element => {
+    linha = criaLinha(element);
+    tabela.appendChild(linha);
+   
+  })
+}
 
+function buscaFeedbacksRemetente() {
+  let tabela = document.getElementById('tabela');
+  let data = fazGet("http://localhost:8080/feedbacks");
+  let feedbacks = JSON.parse(data);
 
+  var filtraRemetente = feedbacks.filter(function (el) {
+    return el.remetente == inputBuscas.value;
+  })
 
+  filtraRemetente.forEach(elemento => {
+    linha = criaLinha(elemento);
+    tabela.appendChild(linha);
+  })
+  
+}
 
+btnUsuario.onclick = function(){
+  buscaFeedbacksUsuario();
+}
+
+btnRemetente.onclick = function(){
+  buscaFeedbacksRemetente();
+}

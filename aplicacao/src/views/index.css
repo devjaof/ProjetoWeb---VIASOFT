@@ -1,7 +1,16 @@
+/* css base */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
 :root body {
     padding: 0;
     margin: 0;
-} 
+
+    background-image: url("../assets/background.jpg");
+}
+
+/* login */
 .container{
     width: 100vw;
     height: 100vh; 
@@ -42,6 +51,8 @@
 .titulo {
     font-size: 30px;
     margin-bottom: 20px;
+
+    font-family: 'Roboto', sans-serif;
 }
 
 .busca {

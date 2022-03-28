@@ -1,7 +1,11 @@
+/* css base */
+
 :root body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+
+    background-image: url("../assets/background.jpg");
 } 
 .container{
     width: 100vw;
@@ -12,6 +16,13 @@
     align-items: center;
 }
 
+/* formulário de envio de feedback */
+
+h1 {
+
+    font-family: 'Roboto', sans-serif;
+}
+
 #novoFeed {
     display: flex;
     flex-direction: column;
@@ -20,10 +31,47 @@
     gap: 5px;
 }
 
-#inputFeed {
-    width: 40vw;
+.input {
+    padding: 15px;
+
+    background-color: lightgrey;
+
+    border: none;
+    border-radius: 20px;
 }
 
 #btn {
-    width: 40.5vw;
+    width: 44.5vw;
+
+    font-size: 18px;
+    background-color: rgb(146, 156, 212);
+
+    padding:10px;
+
+    border-style: none;
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    margin-bottom: 5px;
+}
+
+#btn:hover {
+       background-color: rgb(107, 116, 167)
+}
+
+/* resposta do servidor */
+
+#resposta {
+    display: flex;
+    justify-content: center;   
+
+    width: 100vw;
+    height: 100vh; 
+
+    margin-top: 20px;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+
 }
