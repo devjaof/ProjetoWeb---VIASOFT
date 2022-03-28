@@ -26,7 +26,7 @@ usuario2 | senha: 123
 
 ## Aplicação Funcionando:
 
-<img src="./src/aplicacao/assets/toReadMe/demonstracaoAplicacao.gif">
+<img src="./src/aplicacao/src/assets/toReadMe/demonstracaoAplicacao.gif">
 
 ### O que aprendi:
 
