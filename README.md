@@ -15,7 +15,7 @@ Então é só executar o arquivo index.html em /aplicacao/views/index.html <br>
 
 Existem dois usuários cadastrados: <br>
 usuario1 | senha: 123 <br>
-usuario2 | senha: 123
+usuario2 | senha: 123 <br>
 
 
 ## Funcionamento da API:
@@ -35,4 +35,7 @@ Aprendi a criar uma api, até então nunca havia tido contato com o JavaScript p
 Aprendi também formas de consumir uma api através do JavaScript, o que também nunca havia entendido direito.
 <br><br>
 Este projeto realmente me ajudou a construir diversas noções quanto ao desenvolvimento de uma aplicação WEB. VALEU!
+
+<br><br>
+obs: Infelizmente não consegui adicionar a funcionalidade de editar e deletar feedbacks com base no usuario que está logado, espero que esteja tudo bem e que eu tenha a oportunidade de continuar aprendendo! :)
 
