@@ -30,7 +30,7 @@ usuario2 | senha: 123 <br>
 
 ### O que aprendi:
 
-Apesar de não ter usado um framework em específico, justamente por não ter o tempo necessário para estudá-lo, consegui aprender muita coisa dentro do JavaScript Puro: <br>
+Apesar de não ter usado um framework em específico (ps: estou com foco no estudo de typescript/angular), justamente por não ter o tempo necessário para estudá-lo, consegui aprender muita coisa dentro do JavaScript Puro: <br>
 Aprendi a criar uma api, até então nunca havia tido contato com o JavaScript para backend. Achei incrível;<br>
 Aprendi também formas de consumir uma api através do JavaScript, o que também nunca havia entendido direito.
 <br><br>
