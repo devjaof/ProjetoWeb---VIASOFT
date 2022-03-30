@@ -10,7 +10,7 @@ Para o database usei o mongoDB Atlas;<br>
 Para o frontend será usado JavaScript puro<br>
 
 ## Execução:
-Para executar a aplicação você deve baixar os arquivos em sua máquina e com os módulos express e nodemon ativos rodar "npm start" no terminal dentro da pasta "aplicacao";<br>
+Para executar a aplicação você deve baixar os arquivos em sua máquina e com os pacotes express e nodemon ativos rodar "npm start" no terminal dentro da pasta "aplicacao";<br>
 Então é só executar o arquivo index.html em /aplicacao/views/index.html <br>
 
 Existem dois usuários cadastrados: <br>
